@@ -20,18 +20,38 @@ const highlights = [
 const timeline = [
   {
     year: '2026',
-    title: 'Forward Deployed Leadership Profile',
-    description: 'Leading technical transformation through field-ready engineering and customer-focused solution execution.'
+    title: 'Lead Forward Deployed Engineer',
+    description: 'Lead Forward Deployed Engineer and AI Solutions Architect delivering enterprise-scale software, cloud, and AI solutions for Fortune 500 organizations through client-facing technical leadership.'
   },
   {
     year: '2024',
-    title: 'Digital Engineering & Platform Execution',
-    description: 'Driving integration, automation, modernization, and measurable engineering outcomes.'
+    title: 'AI Software Engineering — The Hartford',
+    description: 'Led on-site solution architecture for Gemini Enterprise, Agentic AI, Model Context Protocol, Cloud Run, and production-grade developer productivity integrations.'
   },
   {
     year: '2022',
-    title: 'Enterprise Transformation Programs',
-    description: 'Translating strategic technology requirements into implementation and delivery programs.'
+    title: 'Enterprise Cloud Transformation Programs',
+    description: 'Guided stakeholder alignment, rapid POCs, automated reconciliation and data mapping workflows, and cross-platform modernization for cloud delivery programs.'
+  },
+  {
+    year: '2019',
+    title: 'Senior Manager, Technology — Wolters Kluwer',
+    description: 'Spearheaded enterprise cloud transformation, platform migrations out of legacy Rackspace environments, and high-availability data modernization initiatives.'
+  },
+  {
+    year: '2018',
+    title: 'Technical Manager & Scrum Master — Selective Insurance',
+    description: 'Managed core infrastructure engineering lifecycles, full-stack optimization, release management, and multi-squad Agile delivery across underwriting platforms.'
+  },
+  {
+    year: '2014',
+    title: 'Technical Manager — Cognizant',
+    description: 'Delivered on-site client engineering to financial services accounts and supported modernization of legacy financial transaction systems.'
+  },
+  {
+    year: '2004',
+    title: 'Technology Delivery & Legacy Modernization',
+    description: 'Built custom financial transaction software for Fortune-level clients and modernized Oracle 9i to 11g data platforms with high-throughput BPM layers.'
   }
 ];
 
