@@ -20,8 +20,8 @@ const highlights = [
 const timeline = [
   {
     year: '2026',
-    title: 'Lead Forward Deployed Engineer',
-    description: 'Lead Forward Deployed Engineer and AI Solutions Architect delivering enterprise-scale software, cloud, and AI solutions for Fortune 500 organizations through client-facing technical leadership.'
+    title: 'Engineering Leader, Enterprise Change & Delivery',
+    description: 'Engineering Leader, Enterprise Change & Delivery, connecting enterprise transformation, delivery leadership, and customer-focused technology outcomes across complex business environments.'
   },
   {
     year: '2024',
@@ -63,7 +63,7 @@ function App() {
           <img className="brand-icon" src="/karthik_pic.png" alt="Karthikeyan Amirthalingam" />
           <div>
             <span className="brand-name">Karthikeyan Amirthalingam</span>
-            <span className="brand-role">Lead Forward Deployed Engineer</span>
+            <span className="brand-role">Engineering Leader, Enterprise Change & Delivery</span>
           </div>
         </div>
         <nav className="main-nav">
