@@ -106,7 +106,7 @@ function App() {
               <span className="status-dot"></span>
               <div>
                 <span className="status-label">Availability</span>
-                <span className="status-text">Open to strategic engineering roles</span>
+                <span className="status-text">Let's Connect</span>
               </div>
             </div>
           </div>

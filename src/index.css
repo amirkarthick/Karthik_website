@@ -351,7 +351,7 @@ body::before {
   font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 0.20em;
-  color: var(--text-faint);
+  color: gold;
 }
 
 .status-text {
