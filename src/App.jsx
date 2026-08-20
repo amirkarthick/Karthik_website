@@ -25,7 +25,7 @@ const timeline = [
   },
   {
     year: '2024',
-    title: 'AI Software Engineering — The Hartford',
+    title: 'AI Software Engineering',
     description: 'Led on-site solution architecture for Gemini Enterprise, Agentic AI, Model Context Protocol, Cloud Run, and production-grade developer productivity integrations.'
   },
   {
@@ -35,17 +35,17 @@ const timeline = [
   },
   {
     year: '2019',
-    title: 'Senior Manager, Technology — Wolters Kluwer',
+    title: 'Senior Manager, Technology',
     description: 'Spearheaded enterprise cloud transformation, platform migrations out of legacy Rackspace environments, and high-availability data modernization initiatives.'
   },
   {
     year: '2018',
-    title: 'Technical Manager & Scrum Master — Selective Insurance',
+    title: 'Technical Manager & Scrum Master',
     description: 'Managed core infrastructure engineering lifecycles, full-stack optimization, release management, and multi-squad Agile delivery across underwriting platforms.'
   },
   {
     year: '2014',
-    title: 'Technical Manager — Cognizant',
+    title: 'Technical Manager',
     description: 'Delivered on-site client engineering to financial services accounts and supported modernization of legacy financial transaction systems.'
   },
   {
