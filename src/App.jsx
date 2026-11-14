@@ -3,12 +3,17 @@ import { motion } from 'framer-motion';
 
 const certifications = [
   {
-    title: 'Google Cloud Platform (GCP)',
-    badge: '☁️',
-    org: 'Cloud Architecture & Enterprise Delivery'
+    title: 'AI-First Software Engineering',
+    badge: '🤖',
+    org: 'Graduate Certificate — Stevens Institute of Technology'
   },
   {
-    title: 'SAFe® Scrum Master (SSM®)',
+    title: 'Data Science Principles',
+    badge: '📊',
+    org: 'Certificate — Harvard Business School Online'
+  },
+  {
+    title: 'SAFe 6.0 Scrum Master (SSM)',
     badge: '⚡',
     org: 'Scaled Agile Academy'
   },
@@ -28,165 +33,153 @@ const leadershipPrinciples = [
   {
     number: '01',
     title: 'People & Squad Empowerment',
-    subtitle: 'High-trust, high-ownership engineering cultures',
-    description: 'Scaling multi-squad organizations through proactive mentorship, clear autonomy, and continuous technical growth. I empower tech leads to make sound architectural decisions with high delivery accountability.'
+    subtitle: 'Leading 45+ engineers across AI & platform teams',
+    description: 'Building high-trust, high-ownership engineering cultures. I lead cross-functional teams through proactive mentorship, clear autonomy, and continuous technical growth — empowering tech leads and AI engineers to deliver production-grade systems with accountability.'
   },
   {
     number: '02',
-    title: 'Architectural Rigor & SRE',
-    subtitle: '99.99% reliability with security-by-design',
-    description: 'Embedding automated quality, CI/CD guardrails, and Site Reliability Engineering (SRE) from day one. Systems are architected for fault tolerance, elasticity, and zero-downtime evolution on Google Cloud.'
+    title: 'Agentic AI & Responsible Governance',
+    subtitle: 'Production multi-agent systems with enterprise guardrails',
+    description: 'Architecting and operationalizing enterprise agentic AI solutions — from MCP-based SDLC accelerators to multi-agent RFP orchestration. I partner with risk, security, and architecture leaders to embed responsible AI governance and reusable design patterns across the SDLC.'
   },
   {
     number: '03',
     title: 'Business Value & FinOps Stewardship',
     subtitle: 'Aligning cloud architecture with executive ROI',
-    description: 'Connecting technical roadmaps to C-suite financial goals. Through disciplined FinOps practices and proactive workload right-sizing, I have driven 35%+ cloud cost optimizations while increasing release velocity.'
+    description: 'Managing $25M+ annual engineering budgets with disciplined FinOps practices. Cloud migrations, vendor partnerships, and workload right-sizing have delivered 30%+ infrastructure cost reductions while accelerating release velocity and business outcomes.'
   }
 ];
 
 const caseStudies = [
   {
-    id: 'gcp-migration',
+    id: 'mcp-accelerators',
+    tag: 'Agentic AI & MCP',
+    title: 'Enterprise MCP-Based SDLC Developer Accelerators',
+    challenge: 'Engineering teams spending excessive time on manual code reviews, API integration, and repetitive development tasks — slowing delivery velocity and increasing cycle times across a 45-person AI engineering org.',
+    architecture: 'Architected and deployed Model Context Protocol (MCP) based SDLC accelerators: Code Assist, Code Review, and API Bridge tools on Google Cloud (GCP) with enterprise guardrails, responsible AI governance, and reusable agentic design patterns.',
+    impact: 'Boosted engineering productivity by 25% and cut code review cycle times by 80%. Established reusable agentic design patterns now adopted across multiple engineering squads.',
+    technologies: ['MCP (FastMCP)', 'Google Cloud (GCP)', 'Agentic AI', 'GitHub Copilot', 'RAG', 'Python']
+  },
+  {
+    id: 'multi-agent-rfp',
+    tag: 'Multi-Agent Automation',
+    title: 'Enterprise Multi-Agent RFP Orchestration System',
+    challenge: 'Manual, time-intensive RFP intake and orchestration workflows across insurance operations, causing slow turnaround times and high operational overhead for cross-functional teams.',
+    architecture: 'Built enterprise multi-agent RFP orchestration on Google Cloud (GCP) and automated functional intake workflows via Microsoft Power Platform agents. Integrated Gemini Enterprise models with responsible AI evaluation benchmarks.',
+    impact: 'Reduced RFP turnaround time by 60%. Automated functional intake workflows eliminated manual processing bottlenecks across business operations.',
+    technologies: ['Google Cloud', 'Microsoft Power Platform', 'Gemini Enterprise', 'Multi-Agent', 'Python', 'TypeScript']
+  },
+  {
+    id: 'azure-migration',
     tag: 'Cloud Transformation',
-    title: 'Enterprise Legacy-to-GCP Modernization',
-    challenge: 'Transitioning mission-critical, monolithic workloads from legacy hosting (Rackspace/On-prem) into a scalable, secure multi-region cloud platform with strict zero-downtime mandates.',
-    architecture: 'Designed GCP Landing Zones with Cloud Foundation Fabric, Shared VPCs, GKE containerization, Cloud Run serverless endpoints, and automated Terraform infrastructure pipelines.',
-    impact: 'Achieved zero-downtime cutover, 99.99% availability, and a 35% reduction in annual cloud TCO through FinOps optimization.',
-    technologies: ['Google Cloud', 'GKE', 'Cloud Run', 'Terraform', 'Shared VPC', 'FinOps']
-  },
-  {
-    id: 'genai-platform',
-    tag: 'Generative AI & LLMs',
-    title: 'Production Agentic AI & Enterprise Gemini Systems',
-    challenge: 'Architecting and operationalizing enterprise AI capabilities to automate multi-step technical workflows and enhance engineering team productivity safely within regulatory bounds.',
-    architecture: 'Implemented Gemini Enterprise integrations, Vertex AI foundation models, Agentic workflow orchestrators, and Model Context Protocol (MCP) tools with enterprise guardrails and RAG pipelines.',
-    impact: 'Reduced routine operational toil by 60%, shortened incident remediation cycles, and created reusable AI blueprints across squads.',
-    technologies: ['Vertex AI', 'Gemini 1.5/2.0', 'Agentic AI', 'MCP Protocol', 'Cloud Run', 'Python']
-  },
-  {
-    id: 'data-mesh',
-    tag: 'Data & Analytics',
-    title: 'Real-Time Financial Analytics & Reconciliation Mesh',
-    challenge: 'Modernizing legacy database batch processing into a high-throughput, low-latency streaming pipeline for mission-critical underwriting and transaction reconciliation.',
-    architecture: 'Built event-driven streaming ingestion with Cloud Pub/Sub, distributed real-time transformations via Cloud Dataflow (Apache Beam), and petabyte-scale analytics in BigQuery with BigLake integration.',
-    impact: 'Cut data latency from hours to sub-second streaming, processing millions of transactions daily with 100% auditability and data integrity.',
-    technologies: ['BigQuery', 'Cloud Dataflow', 'Cloud Pub/Sub', 'BigLake', 'Apache Beam', 'Looker']
+    title: 'Enterprise Rackspace-to-Azure Cloud Migration',
+    challenge: 'Modernizing mission-critical monolithic applications from legacy Rackspace hosting to a scalable, cloud-native Azure platform — with zero-downtime mandates for core insurance and financial services workloads.',
+    architecture: 'Spearheaded enterprise cloud migration to Microsoft Azure: modernized core applications, reporting, and data platforms using AKS, Terraform, CI/CD pipelines, and Azure Synapse for analytics. Managed $25M annual budget and vendor partnerships across 5 scrum teams.',
+    impact: 'Cut infrastructure costs by 30%, improved scalability and delivery cadence across 5 engineering teams. Delivered zero-downtime migration of mission-critical underwriting platforms.',
+    technologies: ['Microsoft Azure', 'AKS', 'Terraform', 'Azure Synapse', 'CI/CD', 'DevSecOps']
   }
 ];
 
 const capabilities = [
   {
-    title: 'GCP Enterprise Architecture & Landing Zones',
-    description: 'Architecting secure, multi-region Google Cloud foundations with Cloud Foundation Fabric, Shared VPCs, GKE, Cloud IAM, and Cloud Security Command Center.',
-    tags: ['Google Cloud', 'Cloud Foundation', 'GKE', 'Security']
+    title: 'Agentic AI Architecture & MCP Systems',
+    description: 'Designing and deploying production multi-agent orchestration systems, MCP-based SDLC accelerators, RAG pipelines, and enterprise AI governance frameworks with Gemini, OpenAI GPT, and GitHub Copilot.',
+    tags: ['Agentic AI', 'MCP (FastMCP)', 'RAG', 'Responsible AI']
   },
   {
-    title: 'Generative AI & Vertex AI Solutions',
-    description: 'Leading production-grade AI initiatives: Gemini 1.5/2.0 API integrations, Agentic workflows, Model Context Protocol (MCP), Vertex AI, and enterprise RAG systems.',
-    tags: ['Vertex AI', 'Gemini', 'Agentic AI', 'MCP']
+    title: 'Multi-Cloud Engineering (GCP, Azure, AWS)',
+    description: 'Leading enterprise cloud migrations and cloud-native platform modernization across GCP, Microsoft Azure, and AWS. Expertise in AKS, GKE, Terraform, CI/CD, and DevSecOps at scale.',
+    tags: ['Google Cloud', 'Microsoft Azure', 'AWS', 'Terraform']
   },
   {
-    title: 'Data Modernization & Analytics Fabrics',
-    description: 'Directing petabyte-scale data modernization on BigQuery, Cloud Dataflow (Apache Beam), Pub/Sub, Dataproc, and unified BigLake data architectures.',
-    tags: ['BigQuery', 'Dataflow', 'Pub/Sub', 'BigLake']
+    title: 'Data Modernization & Analytics Platforms',
+    description: 'Directing data platform modernization with BigQuery, Azure Synapse, ADF, Delta Lake, and Power BI. Delivering intelligent automation, RPA, and data reconciliation pipelines for financial services.',
+    tags: ['BigQuery', 'Azure Synapse', 'Delta Lake', 'Power BI']
   },
   {
     title: 'Cloud-Native & Distributed Microservices',
-    description: 'Modernizing legacy monoliths into highly scalable, containerized architectures leveraging Google Kubernetes Engine (GKE), Cloud Run, and event-driven meshes.',
-    tags: ['GKE', 'Cloud Run', 'Microservices', 'Event-Driven']
+    description: 'Modernizing legacy monoliths into highly scalable, containerized architectures leveraging GKE, AKS, Cloud Run, Microsoft Power Platform, and event-driven microservice meshes.',
+    tags: ['GKE / AKS', 'Cloud Run', 'Microservices', 'Power Platform']
   },
   {
-    title: 'Engineering Org Scaling & Multi-Squad Leadership',
-    description: 'Mentoring and directing 50+ engineers, tech leads, and managers across global squads. Cultivating high-ownership culture, CI/CD rigor, and rapid delivery cadences.',
-    tags: ['Org Scaling', 'Talent Leadership', 'Agile/SAFe', 'Mentorship']
+    title: 'Engineering Org Scaling & AI Team Leadership',
+    description: 'Leading 45+ AI engineers, tech leads, and managers across cross-functional squads. Managing $25M+ annual budgets, SAFe 6.0 ART delivery, vendor partnerships, and high-ownership engineering cultures.',
+    tags: ['Org Scaling', 'SAFe 6.0 / ART', '$25M Budget', 'Mentorship']
   },
   {
-    title: 'Cloud FinOps, SRE & Operational Governance',
-    description: 'Institutionalizing FinOps for 35%+ cloud cost optimization, SRE discipline with 99.99% availability SLAs, automated guardrails, and compliance assurance.',
-    tags: ['FinOps', 'SRE / Observability', '99.99% SLAs', 'Governance']
+    title: 'AI Governance, FinOps & Delivery Excellence',
+    description: 'Establishing responsible AI governance benchmarks, evaluation frameworks, and reusable agentic design patterns. Delivering 30%+ cloud cost reductions through disciplined FinOps and DevSecOps practices.',
+    tags: ['Responsible AI', 'FinOps', 'DevSecOps', 'Governance']
   }
 ];
 
 const techStack = {
-  'Cloud Infrastructure (GCP)': [
+  'AI & Agentic Systems': [
+    'Agentic AI Architecture & Multi-Agent Orchestration',
+    'Model Context Protocol (MCP / FastMCP)',
+    'Retrieval-Augmented Generation (RAG)',
+    'Gemini Enterprise & Vertex AI',
+    'OpenAI GPT & GitHub Copilot',
+    'Responsible AI & Governance Frameworks',
+    'Microsoft Power Platform Agents'
+  ],
+  'Cloud, DevOps & Data': [
     'Google Cloud Platform (GCP)',
-    'Google Kubernetes Engine (GKE)',
-    'Cloud Run & App Engine',
-    'Compute Engine & VPC Architecture',
-    'Anthos / Distributed Cloud',
-    'Cloud IAM & Organization Policies',
-    'Terraform / IaC'
+    'Microsoft Azure (AKS, Synapse, ADF)',
+    'Amazon Web Services (AWS)',
+    'Terraform / IaC & CI/CD Pipelines',
+    'Docker, Kubernetes (GKE / AKS)',
+    'BigQuery, Delta Lake & Azure Synapse',
+    'DevSecOps & Cloud FinOps'
   ],
-  'AI, ML & Data Engineering': [
-    'Vertex AI & Generative AI Studio',
-    'Gemini Enterprise Models',
-    'Agentic AI & MCP Frameworks',
-    'BigQuery (Data Warehouse & ML)',
-    'Cloud Dataflow (Apache Beam)',
-    'Cloud Pub/Sub & Kafka',
-    'Cloud Storage & BigLake'
-  ],
-  'Leadership, Architecture & Delivery': [
-    'Enterprise Engineering Leadership & Governance',
-    'Multi-Squad Agile / SAFe Scaling',
-    'C-Suite & Executive Alignment',
-    'Cloud FinOps & Cost Optimization',
-    'Site Reliability Engineering (SRE)',
-    'Enterprise Legacy Modernization',
-    'Vendor & Partner Management'
+  'Leadership & Delivery': [
+    'Engineering Management (45+ Engineers)',
+    'SAFe 6.0 & ART Delivery',
+    'Enterprise Architecture & Governance',
+    '$25M+ Budget & Vendor Management',
+    'Agile Coaching & Scrum Mastery',
+    'Cloud Migration & Legacy Modernization',
+    'Stakeholder & C-Suite Alignment'
   ]
 };
 
 const highlights = [
   { value: '20+', label: 'Years Tech Leadership' },
-  { value: '50+', label: 'Engineers & Leads Mentored' },
-  { value: 'GCP', label: 'Primary Cloud Architecture' },
-  { value: '99.99%', label: 'Resilience & Uptime SLA' },
-  { value: '35%+', label: 'Cloud TCO Optimization' }
+  { value: '45+', label: 'Engineers Led' },
+  { value: '$25M+', label: 'Annual Budget Managed' },
+  { value: '80%', label: 'Code Review Cycle Reduction' },
+  { value: '60%', label: 'RFP Turnaround Reduction' }
 ];
 
 const timeline = [
   {
-    year: '2024 – Present',
-    role: 'Engineering Leader – Cloud & Enterprise AI',
-    focus: 'Google Cloud Platform, Vertex AI, Agentic Systems & Org Leadership',
-    description: 'Leading solution architecture and engineering delivery for enterprise Gemini AI implementations, Agentic AI workflows with Model Context Protocol (MCP), Cloud Run serverless platforms, and high-throughput developer productivity ecosystems.'
+    year: 'Dec 2024 – Present',
+    role: 'Manager, AI Software Engineering — The Hartford',
+    focus: 'Agentic AI, MCP Accelerators & Multi-Agent Systems (Hartford, CT)',
+    description: 'Leading 45 developers and AI engineers in end-to-end architecture and production delivery of enterprise generative and agentic AI solutions. Architected MCP-based SDLC accelerators (Code Assist, Code Review, API Bridge) boosting productivity by 25% and cutting code review cycles by 80%. Built enterprise multi-agent RFP orchestration on GCP and automated intake workflows via Microsoft Power Platform, reducing turnaround by 60%.'
   },
   {
-    year: '2022 – 2024',
-    role: 'Head of Cloud Engineering & Platform Transformation',
-    focus: 'GCP Migration, Data Modernization & Multi-Squad Governance',
-    description: 'Spearheaded multi-squad cloud modernization programs onto Google Cloud. Directed rapid POCs, automated data reconciliation pipelines, BigQuery analytics adoption, and cross-platform modernization delivering zero-downtime cutovers.'
+    year: 'Jan 2019 – Dec 2024',
+    role: 'Senior Manager, Technology — Wolters Kluwer',
+    focus: 'Program Leadership, Azure Migration & Intelligent Automation (Glastonbury, CT)',
+    description: 'Directed solution architecture and program execution across 5 engineering scrum teams, managing a $25M annual budget, vendor partnerships, and SAFe 6.0 Agile Release Train (ART) PI planning. Spearheaded enterprise cloud migration from Rackspace to Microsoft Azure, cutting infrastructure costs by 30%. Delivered RPA and intelligent automation POCs across invoice reconciliation and data processing, eliminating 30 manual hours annually.'
   },
   {
-    year: '2019 – 2022',
-    role: 'Senior Manager, Cloud Technology & Modernization',
-    focus: 'Enterprise Cloud Transformation & Infrastructure Engineering',
-    description: 'Directed large-scale enterprise cloud transformations, executing legacy workload migrations out of Rackspace into resilient cloud environments. Architected high-availability data infrastructure and improved delivery velocity across multiple product teams.'
+    year: 'Apr 2014 – Dec 2018',
+    role: 'Technical Manager & Scrum Master — Selective Insurance',
+    focus: 'Underwriting Platform Delivery & Agile Transformation (Glastonbury, CT)',
+    description: 'Led software development, technical architecture, and release management for Personal Lines underwriting systems (Auto & Home), improving sprint predictability by 15%. Facilitated Agile ceremonies and backlog prioritization while leading the Agile Community of Practice (CoP) and coaching multiple Scrum teams on delivery maturity.'
   },
   {
-    year: '2018 – 2019',
-    role: 'Technical Manager & Agile Engineering Leader',
-    focus: 'Core Platform Engineering & Release Governance',
-    description: 'Managed core infrastructure engineering lifecycles, full-stack microservices optimization, release governance, and multi-squad Agile delivery across mission-critical underwriting and financial platforms.'
-  },
-  {
-    year: '2014 – 2018',
-    role: 'Technical Delivery Manager – Financial Services',
-    focus: 'Client Engineering, SLAs & Systems Integration',
-    description: 'Led on-site client engineering programs for Tier-1 financial institutions. Supported the modernization of high-frequency financial transaction platforms with strict regulatory compliance and low-latency requirements.'
-  },
-  {
-    year: '2004 – 2014',
-    role: 'Senior Technology Specialist & Systems Modernizer',
-    focus: 'Distributed Systems & Database Modernization',
-    description: 'Built custom mission-critical financial transaction platforms for Fortune 500 clients. Modernized enterprise Oracle data tiers to high-throughput BPM architectures, establishing foundational patterns for future cloud modernization.'
+    year: 'Apr 2004 – Apr 2014',
+    role: 'Technical Manager — Cognizant',
+    focus: 'Enterprise Consulting & Architecture (Hartford, CT & Client Sites)',
+    description: 'Led .NET technical architecture, PEGA (DCO) workflow automation, and Oracle 9i-to-11g database upgrades for Commercial Lines underwriting and specialty policy issuance systems. Delivered enterprise solutions for Travelers, The Hartford, Ameriprise Financial, and Intuit.'
   }
 ];
 
 function App() {
-  const [activeTab, setActiveTab] = useState('Cloud Infrastructure (GCP)');
+  const [activeTab, setActiveTab] = useState('AI & Agentic Systems');
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
@@ -202,7 +195,7 @@ function App() {
           <img className="brand-icon" src={`${import.meta.env.BASE_URL}karthik_pic.png`} alt="Karthikeyan Amirthalingam" />
           <div>
             <span className="brand-name">Karthikeyan Amirthalingam</span>
-            <span className="brand-role">Engineering Leader | Cloud, Data & AI </span>
+            <span className="brand-role">Manager, AI Software Engineering | The Hartford </span>
           </div>
         </div>
         <nav className="main-nav">
@@ -221,13 +214,12 @@ function App() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span></span>
-            Enterprise Cloud & AI Transformation
+            Enterprise AI, Cloud & Insurance Technology
           </div>
-          <h1>Engineering leadership for cloud & AI scale.</h1>
+          <h1>Engineering leadership for agentic AI & cloud scale.</h1>
           <p className="hero-text">
-            20+ years of technology leadership specializing in <strong>Google Cloud Platform (GCP)</strong>,
-            enterprise modernization, and <strong>production Generative AI</strong>. I lead high-performing teams,
-            align C-suite strategy with resilient architecture, and turn complex transformation into measurable business value.
+            20+ years of technology leadership across insurance and financial services, specializing in <strong>production Agentic AI</strong>,
+            <strong> Model Context Protocol (MCP)</strong> systems, and multi-cloud modernization on <strong>GCP, Azure & AWS</strong>. Currently leading 45+ AI engineers at The Hartford to architect and deliver enterprise AI platforms at scale.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary hero-request" href="mailto:amir.karthick@gmail.com">
@@ -235,6 +227,9 @@ function App() {
             </a>
             <a className="btn btn-secondary" href="https://www.linkedin.com/in/karthikeyan-amirthalingam-karthik-ssm®-csm®-mcad-b38ba264/" target="_blank" rel="noreferrer">
               LinkedIn Profile
+            </a>
+            <a className="btn btn-border" href={`${import.meta.env.BASE_URL}Karthikeyan_Amirthalingam_Resume.pdf`} target="_blank" rel="noreferrer" download>
+              📄 Download Resume
             </a>
             <button className="btn btn-border btn-copy" onClick={handleCopyEmail} title="Copy email to clipboard">
               {copied ? '✓ Copied Email' : '📋 Copy Email'}
@@ -295,13 +290,10 @@ function App() {
         <div className="profile-content">
           <div className="profile-copy">
             <p>
-              As an Engineering Leader, I specialize in navigating complex enterprise ecosystems, transitioning legacy architectures
-              into high-performing Google Cloud environments, and pioneering production-grade AI & data systems.
+              Engineering leader with 20+ years of experience delivering enterprise software, cloud migrations, and AI-driven platforms across insurance and financial services. Currently serving as Manager, AI Software Engineering at The Hartford (Hartford, CT).
             </p>
             <p>
-              My leadership model bridges the gap between executive objectives, product roadmaps, and technical teams.
-              Whether establishing GCP Landing Zones, architecting Vertex AI agentic pipelines, or scaling engineering organizations across global squads,
-              I ensure operational excellence, financial governance (FinOps), and 99.99% availability SLAs.
+              Proven track record leading cross-functional engineering teams to architect and deploy production agentic AI solutions, Model Context Protocol (MCP) developer accelerators, and multi-agent workflows across GCP, Azure, and Microsoft Power Platform. Adept at embedding generative AI across the SDLC, establishing responsible AI governance, and aligning scalable architectures with measurable business outcomes.
             </p>
           </div>
           <div className="quote-card glass-card">
@@ -511,14 +503,17 @@ function App() {
             <span className="overline">Executive Engagement</span>
             <h2>Let’s discuss leadership & transformation opportunities.</h2>
             <p>
-              I am open to Engineering Leader, Director of Engineering, and Cloud Transformation roles where GCP cloud strategy,
-              enterprise modernization, and high-impact engineering leadership converge.
+              I am open to Engineering Leader, VP of Engineering, and Director of AI/Cloud roles where agentic AI strategy,
+              enterprise modernization, and high-impact engineering leadership converge across GCP, Azure, and multi-cloud environments.
             </p>
           </div>
           <div className="contact-actions">
             <a className="btn btn-primary" href="mailto:amir.karthick@gmail.com">Connect by email</a>
             <a className="btn btn-secondary" href="https://www.linkedin.com/in/karthikeyan-amirthalingam-karthik-ssm®-csm®-mcad-b38ba264/" target="_blank" rel="noreferrer">
               LinkedIn
+            </a>
+            <a className="btn btn-border" href={`${import.meta.env.BASE_URL}Karthikeyan_Amirthalingam_Resume.pdf`} target="_blank" rel="noreferrer" download>
+              📄 Download Resume
             </a>
             <button className="btn btn-border btn-copy" onClick={handleCopyEmail}>
               {copied ? '✓ Copied: amir.karthick@gmail.com' : '📋 Copy Email Address'}
@@ -532,7 +527,7 @@ function App() {
         <div className="footer-inner">
           <div className="footer-brand">
             <span className="footer-name">Karthikeyan Amirthalingam</span>
-            <span className="footer-sub">Engineering Leader | Cloud, Data & Enterprise AI (GCP)</span>
+            <span className="footer-sub">Manager, AI Software Engineering | The Hartford | Cloud, Data & Enterprise AI</span>
           </div>
           <div className="footer-links">
             <a href="#profile">Profile</a>
