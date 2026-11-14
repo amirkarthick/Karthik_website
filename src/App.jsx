@@ -199,7 +199,7 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="brand">
-          <img className="brand-icon" src="/karthik_pic.png" alt="Karthikeyan Amirthalingam" />
+          <img className="brand-icon" src={`${import.meta.env.BASE_URL}karthik_pic.png`} alt="Karthikeyan Amirthalingam" />
           <div>
             <span className="brand-name">Karthikeyan Amirthalingam</span>
             <span className="brand-role">Engineering Leader | Cloud, Data & AI </span>
@@ -252,7 +252,7 @@ function App() {
 
         <aside className="hero-panel">
           <div className="image-frame">
-            <img className="profile-image" src="/karthik_pic.png" alt="Karthikeyan Amirthalingam" />
+            <img className="profile-image" src={`${import.meta.env.BASE_URL}karthik_pic.png`} alt="Karthikeyan Amirthalingam" />
             <div className="status-card glass-card">
               <span className="status-dot"></span>
               <div>
