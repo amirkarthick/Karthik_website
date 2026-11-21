@@ -195,7 +195,7 @@ function App() {
           <img className="brand-icon" src={`${import.meta.env.BASE_URL}karthik_pic.png`} alt="Karthikeyan Amirthalingam" />
           <div>
             <span className="brand-name">Karthikeyan Amirthalingam</span>
-            <span className="brand-role">Manager, AI Software Engineering | The Hartford </span>
+            <span className="brand-role">Engineering Leader | AI Software Engineering</span>
           </div>
         </div>
         <nav className="main-nav">
