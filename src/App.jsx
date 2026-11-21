@@ -290,7 +290,7 @@ function App() {
         <div className="profile-content">
           <div className="profile-copy">
             <p>
-              Engineering leader with 20+ years of experience delivering enterprise software, cloud migrations, and AI-driven platforms across insurance and financial services. Currently serving as Manager, AI Software Engineering at The Hartford (Hartford, CT).
+              Engineering leader with 20+ years of experience delivering enterprise software, cloud migrations, and AI-driven platforms across insurance and financial services.
             </p>
             <p>
               Proven track record leading cross-functional engineering teams to architect and deploy production agentic AI solutions, Model Context Protocol (MCP) developer accelerators, and multi-agent workflows across GCP, Azure, and Microsoft Power Platform. Adept at embedding generative AI across the SDLC, establishing responsible AI governance, and aligning scalable architectures with measurable business outcomes.
@@ -527,7 +527,7 @@ function App() {
         <div className="footer-inner">
           <div className="footer-brand">
             <span className="footer-name">Karthikeyan Amirthalingam</span>
-            <span className="footer-sub">Manager, AI Software Engineering | The Hartford | Cloud, Data & Enterprise AI</span>
+            <span className="footer-sub">Engineering Leader | AI Software Engineering | Cloud, Data & Enterprise AI</span>
           </div>
           <div className="footer-links">
             <a href="#profile">Profile</a>
